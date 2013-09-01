@@ -57,8 +57,6 @@ echo ('</div>');
 ?>
 
 
-
-
 <?php if(have_posts()):while(have_posts()):the_post(); ?>
 
 <div class="entryBox">
@@ -66,15 +64,14 @@ echo ('</div>');
 	<div class="entryBoxHead">
 	<p class="entryDate"><a href="<?php the_permaLink(); ?>"><?php echo get_the_date(); ?></a></p>
 	<!--entryBoxHead--></div>
-    
-    
+
 <div class="entryPhotoArea">
 <?php the_post_thumbnail(array(700,9999)); ?>
 <!--entryPhotoArea--></div>
 
 <div class="entryText">
-	<?php the_content(); ?>
-	
+<?php the_content(); ?>
+
 <!--entryText--></div>
 
 <!--entryBox--></div>
